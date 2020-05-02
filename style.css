@@ -1,0 +1,279 @@
+/* CSS Reset */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* General */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #171717;
+}
+
+/* Nav */
+
+nav {
+    top: 0;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    height: 56px;
+    background-color: #202020;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    z-index: 1;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.hamburger {
+    padding-top: 2px;
+    height: 25px;
+}
+
+.logo {
+    padding-top: 5px;
+    margin-left: 20px;
+    height: 27px;
+}
+
+.center {
+    display: flex;
+}
+
+#searchbar {
+    display: inline-block;
+    background-color: #111;
+    border: 0.7px solid #313131;
+    border-radius: 2px;
+    height: 32px;
+    width: 570px;
+    color: #fff;
+    padding: 0 10px 0 10px;
+}
+
+.center button {
+    cursor: pointer;
+    background-color: #313131;
+    border: none;
+    display: inline-block;
+    height: 32px;
+    width: 65px;
+}
+
+.right {
+    display: inline;
+    position: relative;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+.right img {
+    margin-left: 15px;
+}
+
+.right a:nth-child(2) img {
+    width: 40px;
+}
+
+.right a:nth-child(3) img {
+    border-radius: 50px;
+    width: 35px;
+}
+
+
+/* Main */
+
+.container {
+    display: flex;
+    margin-top: 80px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin-bottom: 10px;
+}
+
+
+/* Video Section */
+
+.videosection {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.videosection iframe {
+    width: 90%;
+    height: 500px;
+}
+
+
+/* Info section*/
+
+.aboutvideo {
+    margin-top: 2px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    border-bottom: 1px solid #444;
+}
+
+.aboutvideo h3 {
+    color: #FFF;
+    font-weight: normal;
+    font-size: 1.1em;
+}
+
+.aboutvideo .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -5px;
+}
+
+.videoinfo span {
+    color: #909090;
+    font-size: 0.8em;
+}
+
+.aboutvideo .videobuttons span {
+    margin-left: 10px;
+}
+
+.aboutvideo .videobuttons button {
+    background: none;
+    border: none;
+}
+
+.aboutvideo .videobuttons a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #909090;
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+.aboutvideo img {
+    fill: blue;
+}
+
+
+/* Description section */
+
+.userinfo {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px 0px 10px 0px;
+    border-bottom: 1px solid #444;
+}
+
+.userinfo .wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.userinfo .wrapper .userchannel {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.userchannel .useravatar img {
+    border-radius: 50px;
+}
+
+.channelinfo {
+    margin: -10px 0px 0px 15px;
+}
+
+.channelinfo a{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 0.8em;
+}
+
+.channelinfo p:nth-child(2){
+    color: #909090;
+    font-size: 0.7em;
+    margin-top: -15px;
+}
+
+.description {
+    margin-left: 60px;
+}
+
+.description p {
+    color: #fff;
+    font-size: 0.9em;
+}
+
+
+/* Sidebar */
+
+aside {
+    width: 30%;
+    margin-top: -10px;
+}
+
+aside article {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 5px;
+}
+
+aside .upnext {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+
+aside .upnext p {
+    color: #FFF;
+}
+
+article .videometadata {
+    margin: -15px 0px 0px 10px;
+    width: 50%;
+}
+
+.videometadata h4 {
+    color: #FFF;
+    font-size: 0.8em;
+}
+
+.videometadata a {
+    text-decoration: none;
+}
+
+.videometadata p {
+    margin: -10px 0 15px 0;
+    color: #909090;
+    font-size: 0.7em;
+}
